@@ -1,56 +1,72 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-      <HelloWorld/>
-    </v-main>
+    <v-content>
+      <v-container>
+        <v-row>
+          <v-col cols="12">
+            <v-row class="mb-12">
+              <v-col cols="12">
+                <h1 class="mt-5 mb-5">Playground</h1>
+                <v-divider />
+              </v-col>
+            </v-row>
+            <v-row class="mb-12">
+              <v-col cols="12">
+                <Typography />
+                <v-divider />
+              </v-col>
+            </v-row>
+            <v-row  class="mb-12">
+              <v-col cols="12">
+                <Spacing />
+                <v-divider />
+              </v-col>
+            </v-row>
+            <v-row class="mb-12">
+              <v-col cols="12">
+                <Button />
+                <v-divider />
+              </v-col>
+            </v-row>
+            <v-row class="mb-12">
+              <v-col cols="12">
+                <Menu />
+                <v-divider />
+              </v-col>
+            </v-row>
+            <!-- <v-row class="mb-12">
+              <v-col cols="12">
+                <Grid />
+                <v-divider />
+              </v-col>
+            </v-row> -->
+            <!-- <v-row class="mb-12">
+              <v-col cols="12">
+                <Card />
+                <v-divider />
+              </v-col>
+            </v-row> -->
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Typography from "./components/Typography.vue";
+import Spacing from "./components/Spacing.vue";
+import Button from "./components/Button.vue";
+import Menu from "./components/Menu.vue";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
+    Typography,
+    Spacing,
+    Button,
+    Menu,
   },
 
   data: () => ({
