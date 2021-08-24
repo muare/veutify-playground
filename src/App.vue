@@ -34,18 +34,18 @@
                 <v-divider />
               </v-col>
             </v-row>
-            <!-- <v-row class="mb-12">
+            <v-row class="mb-12">
               <v-col cols="12">
                 <Grid />
                 <v-divider />
               </v-col>
-            </v-row> -->
-            <!-- <v-row class="mb-12">
+            </v-row>
+            <v-row class="mb-12">
               <v-col cols="12">
                 <Card />
                 <v-divider />
               </v-col>
-            </v-row> -->
+            </v-row>
           </v-col>
         </v-row>
       </v-container>
@@ -58,6 +58,8 @@ import Typography from "./components/Typography.vue";
 import Spacing from "./components/Spacing.vue";
 import Button from "./components/Button.vue";
 import Menu from "./components/Menu.vue";
+import Grid from "./components/Grid.vue";
+import Card from "./components/Card.vue";
 
 export default {
   name: "App",
@@ -67,6 +69,8 @@ export default {
     Spacing,
     Button,
     Menu,
+    Grid,
+    Card,
   },
 
   data: () => ({
